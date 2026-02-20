@@ -3,10 +3,10 @@
 ## 1. Project Overview
 
 **Project Name:**  
-(write your project name)
+(Savings Goal Calculator)
 
 **What does your calculator do?**  
-(Explain in 2–3 sentences what problem you are solving and what you calculate.)
+(This calculator helps users plan their savings for a personal goal. It calculates how much money they save per month based on their income and saving percentage, and how many months are needed to reach their goal. Users can set any target amount themselves, making it realistic and practical.)
 
 Example:  
 This calculator calculates Body Mass Index (BMI) using weight and height. It also classifies the result into health categories.
@@ -19,27 +19,30 @@ List and explain all inputs you used.
 
 | Input Name | Unit | What it Represents |
 |---|---|---|
-| Example: Weight | kg | User body weight |
-| Example: Height | cm | User height |
+| Example: Monthly Income | ₸ | Total income per month |
+| Example: Savings Goal | ₸ | Desired amount to save (user-defined goal) |
+| Example: Percentage Saved | % | Portion of income saved per month |
 
 Explain in words:  
-(Why did you choose these inputs? Why are they important?)
+(These inputs represent the main financial planning variables: income determines the available money, percentage determines how much is actually saved, and goal defines the target.I also have poor financial literacy, and this calculator solves my problem.)
 
 ---
 
 ## 3. Process (Calculation Logic)
 
 **Formula or Calculation Used:**  
-(Write your formula or explain how calculation works.)
+(Monthly Savings = Income × (Percentage / 100)
+Months Needed = Goal ÷ Monthly Savings)
 
 Example:  
 BMI = weight / (height in meters)^2
 
 **Steps:**
-1. Get input values from HTML  
-2. Convert values if needed (example: cm → meters)  
-3. Perform calculation  
-4. Store result in variable  
+1.Take input from HTML fields.
+2.Convert strings to numbers using parseFloat.
+3.Calculate monthly savings.
+4.Calculate months needed to reach goal using Math.ceil to round up.
+5.Display results in the webpage. 
 
 ---
 
@@ -49,11 +52,10 @@ Explain how your program interprets the result.
 
 Example:
 
-If BMI < 18.5 → Underweight  
-If BMI 18.5 – 24.9 → Normal  
-If BMI ≥ 25 → Overweight  
+If income, percentage, or goal is empty or 0 → show error message.
+Else → calculate monthly savings and months needed.
 
-Explain why you chose these ranges (if using real model, mention it).
+This prevents invalid calculations and ensures users enter meaningful data
 
 ---
 
@@ -61,10 +63,9 @@ Explain why you chose these ranges (if using real model, mention it).
 
 What does your program show to the user?
 
-- Calculated value  
-- Category or interpretation  
-- Personalized message (if used)  
-- Optional: binary output (if implemented)
+Monthly savings (₸)
+Months needed to reach goal (rounded up)
+Personalized message displaying results
 
 ---
 
@@ -76,7 +77,9 @@ What happens if:
 - User enters negative number?  
 - User leaves input empty?  
 
-Explain how your program handles this.
+Zero or empty input - shows error message
+Negative numbers - calculation works mathematically but is logically incorrect
+Non-numeric input - parseFloat returns NaN → caught by if (!income || !percent || !goal)
 
 ---
 
@@ -92,10 +95,10 @@ Examples:
 
 ## 8. How to Run the Project
 
-1. Download or clone repository  
-2. Open `index.html` in browser  
-3. Enter input values  
-4. Click calculate button  
+1.Place index.html, style.css, script.js in the same folder
+2.Open index.html in browser
+3.Enter Monthly Income, Percentage, and Goal
+4.Click Calculate
 
 ---
 
@@ -115,4 +118,4 @@ If yes, explain briefly:
 
 What did you learn from this assignment?
 
-(2–4 sentences)
+(I did something myself for the first time using code. I figured out how and where to save codes.)
