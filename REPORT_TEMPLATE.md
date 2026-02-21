@@ -8,8 +8,6 @@
 **What does your calculator do?**  
 (This calculator helps users plan their savings for a personal goal. It calculates how much money they save per month based on their income and saving percentage, and how many months are needed to reach their goal. Users can set any target amount themselves, making it realistic and practical.)
 
-Example:  
-This calculator calculates Body Mass Index (BMI) using weight and height. It also classifies the result into health categories.
 
 ---
 
@@ -34,8 +32,6 @@ Explain in words:
 (Monthly Savings = Income × (Percentage / 100)
 Months Needed = Goal ÷ Monthly Savings)
 
-Example:  
-BMI = weight / (height in meters)^2
 
 **Steps:**
 1.Take input from HTML fields.
