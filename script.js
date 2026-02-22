@@ -8,6 +8,11 @@ function calculateSavings() {
         document.getElementById("result").innerText = "Please enter valid numbers.";
         return;
     }
+    if (income <= 0 || percent <= 0 || goal <= 0) {
+        document.getElementById("result").innerText = "Numbers cannot be negative or zero.";
+        return;
+    }
+
 
     let monthlySavings = income * (percent / 100);
 
