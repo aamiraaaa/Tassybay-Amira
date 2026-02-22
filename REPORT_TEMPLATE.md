@@ -46,7 +46,6 @@ Months Needed = Goal ÷ Monthly Savings)
 
 Explain how your program interprets the result.
 
-Example:
 
 If income, percentage, or goal is empty or 0 → show error message.
 Else → calculate monthly savings and months needed.
@@ -81,12 +80,8 @@ Non-numeric input - parseFloat returns NaN → caught by if (!income || !percent
 
 ## 7. Optional Features (If You Added Any)
 
-Examples:
-- Binary conversion  
-- Extra calculations  
-- Extra UI features  
-- Validation messages  
-
+Rounded month using Math.ceil() 
+Formatting money with 2 decimals using toFixed(2)
 ---
 
 ## 8. How to Run the Project
@@ -103,12 +98,7 @@ Examples:
 Did you use AI tools?  
 (Yes / No)
 
-If yes, explain briefly:
-- What you asked AI for  
-- What you modified yourself  
-- What you fully understand now  
-
----
+Yes, AI helped write clean code and explanations. I modified code and now understand how it works
 
 ## 10. Reflection
 
