@@ -1,33 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f4f8;
+    background-color: #FFC0CB;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 700px;
 }
 
 .calculator {
     background: white;
-    padding: 25px;
-    width: 300px;
+    padding: 30px;
+    width: 320px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    }
 
 input {
-    width: 100%;
-    padding: 8px;
+    width: 300px;
+    padding: 9px;
     margin-top: 5px;
     margin-bottom: 10px;
+   
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: green;
+    width: 320px;
+    padding: 9px;
+margin-top: 5px;
+    margin-bottom: 10px;
+     background-color: #00BFFF;
     color: white;
-    border: none;
+    border: 2;
+border-color:red;
     cursor: pointer;
 }
 
@@ -35,3 +38,4 @@ button {
     margin-top: 15px;
     font-weight: bold;
 }
+
