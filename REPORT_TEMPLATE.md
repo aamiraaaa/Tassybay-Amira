@@ -16,7 +16,8 @@ This calculator helps users plan their savings for a personal goal. It calculate
 List and explain all inputs you used.
 
 | Input Name | Unit | What it Represents |
-|Percentage Saved|%|Portion of income saved per month|
+| :--- | :--- | :--- |
+| Percentage Saved| % | Portion of income saved per month |
 |  Monthly Income | ₸ | Total income per month|
 |  Savings Goal | ₸ |  Desired amount to save |
 
