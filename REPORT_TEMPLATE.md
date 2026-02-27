@@ -30,15 +30,15 @@ These inputs represent the main financial planning variables: income determines 
 ## 3. Process (Calculation Logic)
 
 **Formula or Calculation Used:**  
-Monthly Savings = Income × (Percentage / 100)
-Months Needed = Goal ÷ Monthly Savings
+* Monthly Savings = Income × (Percentage / 100)
+* Months Needed = Goal ÷ Monthly Savings
 
 **Steps:**
-1.Take input from HTML fields.
-2.Convert strings to numbers using parseFloat.
-3.Calculate monthly savings.
-4.Calculate months needed to reach goal using Math.ceil to round up.
-5.Display results in the webpage.
+1. Take input from HTML fields.
+2. Convert strings to numbers using parseFloat.
+3. Calculate monthly savings.
+4. Calculate months needed to reach goal using Math.ceil to round up.
+5. Display results in the webpage.
 
 ---
 
@@ -46,8 +46,8 @@ Months Needed = Goal ÷ Monthly Savings
 
 Explain how your program interprets the result.
 
-If income, percentage, or goal is empty or 0 then it show error message.
-Else → calculate monthly savings and months needed.
+*If income, percentage, or goal is empty or 0 then it show error message.
+*Else → calculate monthly savings and months needed.
 
 This prevents invalid calculations and ensures users enter meaningful data.
 
@@ -57,9 +57,9 @@ This prevents invalid calculations and ensures users enter meaningful data.
 
 What does your program show to the user?
 
-Monthly savings (₸)
-Months needed to reach goal (rounded up)
-Personalized message displaying results
+* Monthly savings (₸)
+* Months needed to reach goal (rounded up)
+* Personalized message displaying results
 
 ---
 
@@ -67,27 +67,27 @@ Personalized message displaying results
 
 What happens if:
 
-Zero or empty input → shows error message
-Negative numbers → calculation works mathematically but is logically incorrect (could be handled with extra validation)
- Non-numeric input → parseFloat returns NaN → caught by if (!income || !percent || !goal)      
+* Zero or empty input → shows error message
+* Negative numbers → calculation works mathematically but is logically incorrect (could be handled with extra validation)
+* Non-numeric input → parseFloat returns NaN → caught by if (!income || !percent || !goal)      
 
 ---
 
 ## 7. Optional Features (If You Added Any)
 
 Examples:
-Dynamic output using innerHTML
-Rounded months using Math.ceil()
-Formatting money with 2 decimals using toFixed(2)          
+* Dynamic output using innerHTML
+* Rounded months using Math.ceil()
+* Formatting money with 2 decimals using toFixed(2)          
 
 ---
 
 ## 8. How to Run the Project
 
-1.Place index.html, style.css, script.js in the same folder
-2.Open index.html in browser
-3.Enter Monthly Income, Percentage, and Goal
-4.Click Calculate
+1. Place index.html, style.css, script.js in the same folder
+2. Open index.html in browser
+3. Enter Monthly Income, Percentage, and Goal
+4. Click Calculate
 
 ---
 
@@ -101,4 +101,4 @@ Yes,AI helped write clean code and explanations. I modified code and now fully u
 ## 10. Reflection
 
 What did you learn from this assignment?
-This is my first experience working with code in this way, truly understanding it. I understood how HTML,JS,CSS works.
+This is my first experience working with code in this way, truly understanding it. I understood how HTML,JS,CSS works. I also underatood that it is not that hard.I watched 3 videos, talked a lot with AI and it really helped to understand my code. It is also about repeating and practising 
